@@ -1,24 +1,50 @@
 * {
-    font-family: sans-serif;
-  }
-  input,
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+input,
+button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input {
+  display: block;
+  margin-bottom: 20px;
+  width: calc(100% - 22px);
+}
+
+button {
+  border: 1px solid gray;
+  background: whitesmoke;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: calc(48% - 12px);
+  cursor: pointer;
+}
+
+button:nth-last-child(3),
+button:nth-last-child(2),
+button:nth-last-child(1) {
+  background: tomato;
+  color: white;
+}
+
+.calculator-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
   button {
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
+    width: calc(100% - 12px);
+    margin-bottom: 10px;
   }
-  input {
-    display: block;
-    margin-bottom: 20px;
-  }
-  button {
-    border: 1px solid gray;
-    background: whitesmoke;
-    margin-right: 5px;
-  }
-  button:nth-last-child(2),
-  button:nth-last-child(1) {
-    background: tomato;
-    color: white;
-  }
-  
+}
